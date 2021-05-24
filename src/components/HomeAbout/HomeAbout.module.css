@@ -1,0 +1,178 @@
+.scroll_container {
+  font-size: 0.9em;
+}
+
+.wrapper {
+  background-color: rgba(12, 113, 195, 0.125);
+  padding: 0 1.25em;
+}
+
+.section {
+  /* Initial mobile design */
+  max-width: 550px;
+  margin: 0 auto;
+  padding-top: 2em;
+}
+
+.title {
+  font-size: 1.75em;
+  text-align: center;
+  margin-top: 0;
+  padding: 0 1.25em;
+  padding-top: 1em;
+  text-transform: uppercase;
+  color: #0c71c3;
+}
+
+.subtitle_link {
+  color: hsla(0, 0%, 0%, 0.73);
+}
+
+.subtitle_link:hover {
+  color: #2ea3f2;
+}
+
+.subtitle {
+  font-size: 1.25em;
+  text-align: center;
+  padding: 0 1.25em;
+  margin-top: 1.25em;
+}
+
+.subtitle_bold {
+  color: #000000;
+  font-weight: 600;
+}
+
+.section h2 {
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 1em 0;
+  padding-bottom: 0;
+  color: #000000;
+}
+
+.icon_wrapper {
+  background-color: #0c71c3;
+  display: block;
+  text-align: center;
+  width: min-content;
+  margin: 0 auto;
+  padding: 1.75em;
+  border-radius: 50%;
+}
+
+.icon_wrapper:hover {
+  background-color: #000000;
+}
+
+.icon_wrapper .icon {
+  color: #ffffff;
+  font-size: 4em;
+}
+
+.section p {
+  margin: 1.5em 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.last_element {
+  padding-bottom: 1.5em;
+}
+
+@media (min-width: 440px) {
+  .scroll_container {
+    font-size: 1em;
+  }
+}
+
+/* Desktop design */
+@media (min-width: 1024px) {
+  .scroll_container {
+    font-size: 0.9em;
+  }
+
+  .wrapper {
+    padding: 1em 2em;
+    display: flex;
+  }
+
+  .title {
+    font-size: 2em;
+    padding: 0 2em;
+    padding-top: 1.5em;
+  }
+
+  .subtitle {
+    font-size: 1.5em;
+    padding: 0 2em;
+  }
+
+  .subtitle_bold {
+    padding-bottom: 0.75em;
+  }
+
+  .section {
+    max-width: none;
+    margin: 0;
+    flex-basis: 50%;
+  }
+
+  .wrapper section:first-child {
+    margin-right: 2em;
+  }
+
+  .section h2 {
+    font-size: 2.25em;
+    padding: 1em 0;
+    padding-bottom: 0;
+  }
+
+  .icon_wrapper .icon {
+    font-size: 4.5em;
+  }
+
+  /* Evening out bottom padding on desktop */
+  .section p {
+    padding-bottom: 2em;
+  }
+
+  .last_element {
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: 1366px) {
+  .scroll_container {
+    font-size: 0.95em;
+  }
+
+  .wrapper {
+    padding: 1em 10em;
+  }
+
+  .title {
+    padding: 0 10em;
+    margin-top: 0;
+    padding-top: 2em;
+  }
+
+  .subtitle {
+    padding: 0 10em;
+  }
+
+  .subtitle_bold {
+    margin-bottom: 2em;
+  }
+
+  .section p {
+    font-size: 1.1em;
+  }
+
+  .wrapper section:first-child {
+    margin-right: 3em;
+  }
+}

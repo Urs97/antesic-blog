@@ -1,0 +1,147 @@
+.wrapper {
+  padding: 2.5em 1.25em;
+  padding-top: 1em;
+  /* Initial mobile design */
+  max-width: 550px;
+  margin: 0 auto;
+  padding-bottom: 1.5em;
+  font-size: 0.9em;
+}
+
+.subtitle {
+  font-size: 0.9em;
+  padding: 0 1em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.wrapper h2 {
+  font-size: 2em;
+  margin: 0;
+  margin-bottom: 1.25em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0c71c3;
+}
+
+.wrapper form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+}
+
+.wrapper form label {
+  /* text-transform: uppercase; */
+  font-weight: 600;
+}
+
+.wrapper form label input {
+  width: 100%;
+  padding: 0.25em 0.5em;
+  background-color: #ffffff;
+  border: 1px solid #909090;
+  margin-top: 0.25em;
+}
+
+.wrapper form label textarea {
+  width: 100%;
+  padding: 0.25em 0.5em;
+  background-color: #ffffff;
+  border: 1px solid #909090;
+  margin-top: 0.25em;
+}
+
+.wrapper h4 {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
+.wrapper form > * {
+  margin-bottom: 1.5em;
+}
+
+.contact_info section {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact_info section div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.contact_info div svg {
+  font-size: 1.5em;
+  margin-right: 1em;
+}
+
+.contact_info section div a {
+  text-decoration: none;
+  color: #2ea3f2;
+  font-weight: 600;
+}
+
+.contact_info section div a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 440px) {
+  .wrapper {
+    font-size: 1em;
+  }
+}
+
+/* Desktop design */
+@media (min-width: 1024px) {
+  .wrapper {
+    background-color: rgba(12, 113, 195, 0.125);
+    max-width: none;
+    margin: 0;
+    padding: 3em 2em;
+    padding-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "subtitle subtitle"
+      "title title"
+      "contact info";
+  }
+
+  .subtitle {
+    grid-area: subtitle;
+    font-size: 1em;
+  }
+
+  .wrapper h2 {
+    grid-area: title;
+    font-size: 2.25em;
+  }
+
+  .wrapper form {
+    grid-area: contact;
+    margin-right: 4em;
+  }
+
+  .wrapper h4 {
+    margin-top: 0;
+  }
+
+  .contact_info {
+    grid-area: info;
+  }
+
+  .contact_info p {
+    margin-bottom: 3em;
+  }
+}
+
+@media (min-width: 1366px) {
+  .wrapper {
+    padding: 3em 10em;
+    padding-bottom: 0;
+  }
+}

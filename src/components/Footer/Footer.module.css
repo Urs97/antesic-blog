@@ -1,0 +1,143 @@
+.footer {
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  padding: 3em 1.25em;
+}
+
+.footer section {
+  margin-bottom: 2em;
+}
+
+.social_section {
+  /* Initial mobile design */
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.social_section .icon {
+  font-size: 2.75em;
+  margin: 0 0.1em;
+}
+
+.social_section .linkedin {
+  color: #0073b0;
+}
+
+.social_section .facebook {
+  color: #1877f2;
+}
+
+.about_section {
+  /* Initial mobile design */
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.nav_section {
+  /* Initial mobile design */
+  max-width: 550px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav_section nav {
+  margin-right: 1em;
+}
+
+.nav_section nav ul li {
+  color: #0c71c3;
+}
+
+.logo_section {
+  /* Initial mobile design */
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.footer h4 {
+  color: #0c71c3;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.nav_section nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav_section nav a:hover {
+  color: #0c71c3;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 10em;
+}
+
+.designer {
+  margin-top: 2.5em;
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    padding: 3em 2em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "social social social"
+      "about nav logo"
+      "designer designer designer";
+  }
+
+  .social_section {
+    grid-area: social;
+    margin-bottom: 3em;
+  }
+
+  .social_section .icon {
+    transition: 500ms;
+  }
+
+  .social_section .icon:hover {
+    transform: scale(1.2);
+  }
+
+  .about_section {
+    grid-area: about;
+  }
+
+  .nav_section {
+    grid-area: nav;
+  }
+
+  .logo_section {
+    grid-area: logo;
+  }
+
+  .logo_section h4 {
+    padding: 0 4.5em;
+  }
+
+  .designer {
+    grid-area: designer;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1366px) {
+  .footer {
+    padding: 3.5em 10em;
+  }
+}

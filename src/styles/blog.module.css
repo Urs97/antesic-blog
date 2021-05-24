@@ -1,0 +1,19 @@
+.blog {
+  /* When u replace blog roll */
+  /* padding: 1.5em 1.25em; */
+}
+
+.blog h1 {
+  background-color: rgba(12, 113, 195, 0.125);
+  color: #0c71c3;
+  padding: 1.5em 1em;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@media (min-width: 1024px) {
+  .blog h1 {
+    font-size: 2.5em;
+  }
+}

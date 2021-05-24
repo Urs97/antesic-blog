@@ -1,0 +1,39 @@
+.wrapper {
+  height: 10vh;
+  margin: 0 auto;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 5px 10px 0 rgba(50, 50, 50, 0.06);
+}
+
+/* Remove when u get the logo */
+.wrapper a {
+  text-decoration: none;
+}
+
+.logo {
+  color: #0c71c3;
+  margin: 0;
+}
+
+.nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333333;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: #2ea3f2;
+}
+
+.nav a:not(:last-child) {
+  margin-right: 3em;
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    display: flex;
+  }
+}

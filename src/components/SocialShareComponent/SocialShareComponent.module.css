@@ -1,0 +1,54 @@
+.wrapper {
+  padding-bottom: 3em;
+  font-size: 0.9em;
+  background-color: rgba(12, 113, 195, 0.125);
+}
+
+.wrapper h4 {
+  text-align: center;
+  margin-bottom: 1.5em;
+  margin-top: 0;
+  padding-top: 2.5em;
+}
+
+.wrapper .icons {
+  width: max-content;
+  margin: 0 auto;
+}
+
+.icon {
+  font-size: 2.75em;
+  margin: 0 0.1em;
+}
+
+.facebook {
+  color: #1877f2;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.linkedin {
+  color: #0073b0;
+}
+
+.pinterest {
+  color: #e60023;
+}
+
+@media (min-width: 1024px) {
+  .wrapper h4 {
+    font-size: 1.25em;
+    margin-top: 0em;
+    padding-top: 2em;
+  }
+
+  .icon {
+    transition: 500ms;
+  }
+
+  .icon:hover {
+    transform: scale(1.2);
+  }
+}

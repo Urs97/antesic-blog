@@ -1,0 +1,60 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.content {
+  z-index: 2;
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 5em;
+}
+
+.content h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.content button {
+  font-size: 0.85em;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(90, 178, 245, 0.3);
+}
+
+@media (min-width: 1024px) {
+  .content h1 {
+    font-size: 3.25em;
+    margin-bottom: 0.5em;
+  }
+
+  .content p {
+    font-size: 1.5em;
+    margin-bottom: 1.5em;
+  }
+
+  .content a {
+    font-size: 1.1em;
+  }
+}
