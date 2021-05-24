@@ -2,6 +2,8 @@
 
 Blog powered by <a href="https://github.com/gatsbyjs/gatsby" target="_blank" rel="noopener noreferrer">Gatsby</a>, a React-based open source framework for creating websites and apps, using <a href="https://github.com/css-modules/css-modules" target="_blank" rel="noopener noreferrer">CSS Modules</a> for styling purposes.
 
+*Full commit history at <a href="https://github.com/Dantesic/blog" target="_blank" rel="noopener noreferrer">https://github.com/Dantesic/blog</a>
+
 ## Live Website
 
 <a href="https://www.antesic.com/" target="_blank" rel="noopener noreferrer">https://www.antesic.com</a>
